@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto",sans-serif;
+  font-size: 1.6rem;
+  font-weight: 320;
+}
+
+#services-section {
+  background: rgba(0, 0, 0, .6);
+  padding: 4rem 0;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 100rem;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.services-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.border {
+  width: 16rem;
+  height: 3px;
+  background: #82ccdd;
+  margin: 2rem auto;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  max-width: 33.3%;
+  padding: 1rem;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+  color: #eee;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #82ccdd;
+  border-radius: .4rem;
+  display: inline-block;
+  transition: all .4s;
+  transform: rotateY(3px);
+}
+
+.btn:hover, .btn:active {
+  background: rgba(0, 0, 0, .8);
+  transform: scale(1.1);
+  color: #82ccdd;
+
+}
+
+.service-icons {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid #82ccdd;
+  border-radius: .4rem;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  transition: .3s linear;
+}
+
+.service-icons i {
+  line-height: 7rem;
+  transform: rotate(-45deg);
+  font-size: 3.5rem;
+}
+
+.service-box:hover .service-icons {
+  background-color: rgba(0, 0, 0, .8);
+  color: #eee;
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.service-desc p {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width:960px) {
+  .service-box {
+    max-width: 45.5%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:478px) {
+  .service-box {
+    max-width: 100%;
+  }
+}
